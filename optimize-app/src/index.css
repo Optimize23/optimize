@@ -67,6 +67,7 @@ span {
 /* Desktop Code */
 .DesktopScreen {
   position: relative;
+  height: 70vh;
 }
 .DesktopItems {
   padding: 2em;
@@ -74,52 +75,54 @@ span {
   flex-direction: row;
   align-content: center;
   align-items: center;
-  margin: 30vh 0;
+  margin: 22vh 0;
 }
 .DesktopText {
-  flex: 0.5;
-  border: 3px solid red;
+width: 50% ;
 }
 .DesktopImages {
-  flex: 2;
+width: 60%;
   display: flex;
   flex-direction: row;
   position: relative;
-
-  /* position: absolute;
-  width: 772px;
-  left: 512px;
-  top: 22px; */
+  padding-top: 4em;
+  padding-right: 2em;
 }
 .Img5 {
   width: 25%;
   position: absolute;
   left: 77.44%;
-  bottom: 100px;
+  bottom: 160px;
 }
 .Img1 {
   width: 9%;
   position: absolute;
   left: 75.44%;
-  top: -370px;
+  top: -280px;
 }
 .Img3 {
   position: absolute;
-  right: 45.1%;
-  top: 20px;
+  right: 50%;
+  top: 25px;
   width: 30%;
 }
 .Img4 {
   position: absolute;
-  width: 28%;
+  width: 38%;
   right: 59.62px;
-  top: -165.95px;
+  top: -147.95px;
 }
 .Img2 {
   position: absolute;
-  width: 40%;
-  left: 0.93%;
-  right: 65.73%;
-  top: 89.85%;
-  bottom: 1.7%;
+  width: 30%;
+  right: 49.73%;
+  top: 199.85px;
+}
+.Img6 {
+  position: absolute;
+  width: 38%;
+  right: 35.73%;
+  bottom: 45px;
+  width: 43%;
+
 }
