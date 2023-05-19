@@ -1,13 +1,125 @@
-body {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.MobileScreen {
+  width: 100%;
+}
+.DesktopScreen {
+  width: 100%;
+}
+.MobileHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-top: 2em;
+}
+.BackgroundCircle {
+  margin-top: -3em;
+}
+
+.MobileItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.MobileItems img {
+  width: 200px;
+  height: 200px;
+}
+.CenterImg {
+  margin: 1em auto;
+}
+
+.MobileBtn {
+  display: flex;
+  margin: 3em auto;
+}
+
+span {
+  color: #0dde65;
+}
+.MobileItems h1 {
+  color: #002a80;
+  font-family: "Inter";
+  font-weight: 800;
+  font-size: 2em;
+  line-height: 40px;
+  text-align: center;
+}
+.MobileItems p {
+  color: #002a80;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 50px;
+  text-align: center;
+}
+
+/* Desktop Code */
+.DesktopScreen {
+  position: relative;
+}
+.DesktopItems {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin: 30vh 0;
+}
+.DesktopText {
+  flex: 0.5;
+  border: 3px solid red;
+}
+.DesktopImages {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  /* position: absolute;
+  width: 772px;
+  left: 512px;
+  top: 22px; */
+}
+.Img5 {
+  width: 25%;
+  position: absolute;
+  left: 77.44%;
+  bottom: 100px;
+}
+.Img1 {
+  width: 9%;
+  position: absolute;
+  left: 75.44%;
+  top: -370px;
+}
+.Img3 {
+  position: absolute;
+  right: 45.1%;
+  top: 20px;
+  width: 30%;
+}
+.Img4 {
+  position: absolute;
+  width: 28%;
+  right: 59.62px;
+  top: -165.95px;
+}
+.Img2 {
+  position: absolute;
+  width: 40%;
+  left: 0.93%;
+  right: 65.73%;
+  top: 89.85%;
+  bottom: 1.7%;
 }
