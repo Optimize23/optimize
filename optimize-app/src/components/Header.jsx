@@ -13,6 +13,7 @@ import Budget from '../assets/Budgeting.svg'
 import CardImg from '../assets/CardRevenue.svg'
 import RevenueIcon from '../assets/Expenses.svg'
 import BckImage from '../assets/GirlBng.png'
+import { BrowserRouter as useHistory } from "react-router-dom";
 
 
 
@@ -63,6 +64,10 @@ const DesktopParagraph = styled(Typography)`
 `;
 
 function Header() {
+  const history = useHistory();
+  function handleClick() {
+    history.push("/login");
+  }
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
@@ -79,7 +84,7 @@ function Header() {
               <ContainedButton
                 variant="contained"
                 sx={{ textTransform: "capitalize", fontWeight: "bold" }}
-              >
+                onClick={handleClick} >
                 Log in
               </ContainedButton>
               <OutlineButton
