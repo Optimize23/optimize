@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import { Typography } from "@mui/material";
 import Background2 from "../assets/Background2.svg";
 import MobileBackground from "../assets/MobileImage.png";
-import { Button, TextField } from "@mui/material";
+import { Button, TextField as MuiTextField } from "@mui/material";
 
 const ContainedButton = styled(Button)`
   background: #002a80;
@@ -34,6 +34,48 @@ const HeaderTypography = styled(Typography)`
   font-size: 1.5em;
   line-height: 4px;
 `;
+const TextField = styled(MuiTextField)`
+  .MuiOutlinedInput-root {
+    border-radius: 8px;
+    color:  #ffffff; 
+    &:hover fieldset {
+      border-color: #ffffff;
+    }
+    &.Mui-focused fieldset {
+      border-color: #ffffff; 
+    }
+  }
+  .MuiFormLabel-root {
+    color: #ffffff; 
+  }
+  .MuiInputBase-input {
+    color: #ffffff; 
+  }
+  fieldset {
+    border-color: #ffffff;
+  }
+`;
+const TextArea = styled(MuiTextField)`
+.MuiOutlinedInput-root {
+  border-radius: 8px;
+  color:  #002a80; 
+  &:hover fieldset {
+    border-color:#002a80;
+  }
+  &.Mui-focused fieldset {
+    border-color: #002a80; 
+  }
+}
+.MuiFormLabel-root {
+  color: #002a80; 
+}
+.MuiInputBase-input {
+  color: #002a80;
+}
+fieldset {
+  border-color: #002a80;
+}
+`
 
 function Signup() {
   const isDesktop = useMediaQuery('(min-width: 1024px)');
@@ -60,13 +102,7 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform signup logic here, e.g., send data to server, validate, etc.
-    console.log('Signup form submitted');
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Password:', password);
-    console.log('Confirm Password:', confirmPassword);
-  };
+  }
 
   return (
     <div>
@@ -139,7 +175,16 @@ function Signup() {
                 </OutlineButton>
               </div>
               <div className='terms and conditiom'>
-              <h4>I agree to all Terms & Conditions</h4>
+              <label style={{color:"#002a80",fontSize:"0.8em",fontFamily:"Inter",}}>
+              <input style={{  textAlign:"right",
+              margin:"1em 1em",color:"#002a80"}}
+              type="checkbox"
+              checked={rememberMe}
+              onChange={handleCheckboxChange}
+            />
+              I agree to all Terms & Conditions
+              </label>
+              
               </div>
             </form>
           </div>
