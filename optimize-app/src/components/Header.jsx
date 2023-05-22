@@ -2,18 +2,18 @@ import React from "react";
 import Nav from "./Nav";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/material/styles";
-import { Typography } from "@mui/material";
-
+import { Typography,Button } from "@mui/material";
 import MobileBackground from "../assets/MobileImage.png";
 import BackgroundImg from "../assets/BackgroundEllipse.svg";
-import { Button } from "@mui/material";
 import ActiveIcon from '../assets/Active.svg'
 import ArrowIcon from '../assets/Arrow.svg'
 import Budget from '../assets/Budgeting.svg'
 import CardImg from '../assets/CardRevenue.svg'
 import RevenueIcon from '../assets/Expenses.svg'
 import BckImage from '../assets/GirlBng.png'
-import { BrowserRouter as useHistory } from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
+
+
 
 
 
@@ -64,11 +64,14 @@ const DesktopParagraph = styled(Typography)`
 `;
 
 function Header() {
-  const history = useHistory();
-  function handleClick() {
-    history.push("/login");
-  }
+  
+
   const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/Login');
+  };
+
 
   return (
     <div className="HeroSection">
@@ -144,7 +147,7 @@ function Header() {
               <ContainedButton
                 variant="contained"
                 sx={{ textTransform: "capitalize", fontWeight: "bold" }}
-              >
+             onClick={handleClick} >
                 Log in
               </ContainedButton>
               <OutlineButton
