@@ -24,7 +24,7 @@ const HeaderTypography = styled(Typography)`
   color: #ffffff;
   font-family: "Urbanist";
   font-weight: 800;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 4px;
   margin-left: 1.5em;
 
@@ -122,7 +122,7 @@ const LogForm = () => {
         <div className="DesktopLoginScreen">
           <div className="LoginContainer">
             <div className="DesktopLogo">
-<img src={DesktopLogo} alt="desktop color logo" style={{width:"25%", margin:"1em 8em", }}/>
+<img src={DesktopLogo} alt="desktop color logo" style={{width:"20%", margin:"2em 8em", }}/>
             </div>
             <div className="DesktopLoginForm">
               <h3>Welcome Back</h3>
