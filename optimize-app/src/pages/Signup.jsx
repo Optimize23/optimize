@@ -5,6 +5,10 @@ import { Typography } from "@mui/material";
 import Background2 from "../assets/Background2.svg";
 import MobileBackground from "../assets/MobileImage.png";
 import { Button, TextField as MuiTextField } from "@mui/material";
+// import Background2 from "../assets/Background2.svg";
+// import MobileBackground from "../assets/MobileImage.png";
+import { Button, TextField } from "@mui/material";
+
 
 const ContainedButton = styled(Button)`
   background: #002a80;
@@ -102,8 +106,14 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  }
-
+    // Perform signup logic here, e.g., send data to server, validate, etc.
+    console.log('Signup form submitted');
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Password:', password);
+    console.log('Confirm Password:', confirmPassword);
+  };
+ 
   return (
     <div>
       {isDesktop ? (
@@ -112,11 +122,11 @@ function Signup() {
         <div className='Mobile-container'>
           <div className="MobileHeader">
             <HeaderTypography variant="h3">Opitrack</HeaderTypography>
-            <img
+            {/* <img
               src={Background2}
               className="BackgroundCircle"
               alt="ellipse circle"
-            />
+            /> */}
           </div>
           <div className="MobileItems">
             <div>

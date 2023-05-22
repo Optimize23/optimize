@@ -2,15 +2,18 @@ import React from "react";
 import Nav from "./Nav";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/material/styles";
-import { Typography } from "@mui/material";
+import { Typography,Button } from "@mui/material";
 import MobileBackground from "../assets/MobileImage.png";
 import BackgroundImg from "../assets/BackgroundEllipse.svg";
-import { Button } from "@mui/material";
 import ActiveIcon from '../assets/Active.svg'
 import ArrowIcon from '../assets/Arrow.svg'
 import Budget from '../assets/Budgeting.svg'
 import CardImg from '../assets/CardRevenue.svg'
 import RevenueIcon from '../assets/Expenses.svg'
+import BckImage from '../assets/GirlBng.png'
+import {useNavigate} from 'react-router-dom';
+
+
 
 
 
@@ -48,18 +51,30 @@ const DesktopTypography = styled(Typography)`
   color: #002a80;
   font-family: "Urbanist";
   font-weight: 800;
-  font-size: 3em;
-  line-height: 48px;
+  font-size: 4em;
+  line-height: 68px;
 `;
 const DesktopParagraph = styled(Typography)`
   color: #002a80;
   font-family: "Urbanist";
   font-weight: 500;
   font-size: 1em;
+  margin-top: 1em;
+
 `;
 
-function Hero() {
+function Header() {
+  
+
   const isDesktop = useMediaQuery("(min-width: 1024px)");
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/Login');
+  };
+  const SignClick = () => {
+    navigate('/Signup');
+  };
+
 
   return (
     <div className="HeroSection">
@@ -69,18 +84,19 @@ function Hero() {
  <div className="DesktopItems">
  <div className="DesktopText">
 <DesktopTypography variant="h1"> Grow Your Business by the <span>Number</span> </DesktopTypography>
-<DesktopParagraph variant="h6"> Manage all your money with ease from one place.One app for all SME</DesktopParagraph>
+<DesktopParagraph variant="h6"> Manage all your money with ease from one place.One app for all SME.Track your income and expenses, analyze your financial habits and stick to your budgets</DesktopParagraph>
 
 <div className="MobileBtn">
               <ContainedButton
                 variant="contained"
                 sx={{ textTransform: "capitalize", fontWeight: "bold" }}
-              >
+                onClick={handleClick} >
                 Log in
               </ContainedButton>
               <OutlineButton
                 variant="outlined"
                 sx={{ textTransform: "capitalize", fontWeight: "bold" }}
+                onClick={SignClick}
               >
                 Sign Up
               </OutlineButton>
@@ -98,6 +114,9 @@ function Hero() {
 </div>
 <div>
 <img src={RevenueIcon} alt="optimize logo" className="Img3" />
+</div>
+<div>
+<img src={BckImage} alt="optimize logo" className="Img6" />
 </div>
 <div>
 <img src={CardImg} alt="optimize logo" className="Img4" />
@@ -132,13 +151,13 @@ function Hero() {
               <ContainedButton
                 variant="contained"
                 sx={{ textTransform: "capitalize", fontWeight: "bold" }}
-              >
+             onClick={handleClick} >
                 Log in
               </ContainedButton>
               <OutlineButton
                 variant="outlined"
                 sx={{ textTransform: "capitalize", fontWeight: "bold" }}
-              >
+                onClick={SignClick}>
                 Sign Up
               </OutlineButton>
             </div>
@@ -150,4 +169,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Header;
