@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/material/styles";
 import { Typography } from "@mui/material";
-import Background2 from "../assets/Background2.svg";
-import MobileBackground from "../assets/MobileImage.png";
+// import Background2 from "../assets/Background2.svg";
+// import MobileBackground from "../assets/MobileImage.png";
 import { Button, TextField } from "@mui/material";
 
 
@@ -77,11 +77,11 @@ function Signup() {
         <div className='Mobile-container'>
           <div className="MobileHeader">
             <HeaderTypography variant="h3">Opitrack</HeaderTypography>
-            <img
+            {/* <img
               src={Background2}
               className="BackgroundCircle"
               alt="ellipse circle"
-            />
+            /> */}
           </div>
           <div className="MobileItems">
             <div>
