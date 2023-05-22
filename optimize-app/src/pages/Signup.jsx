@@ -6,6 +6,7 @@ import BackgroundImg from "../assets/BackgroundEllipse.svg";
 import MobileBackground from "../assets/MobileImage.png";
 import { Button, TextField } from "@mui/material";
 
+
 const ContainedButton = styled(Button)`
   background: #002a80;
   border-radius: 4px;
@@ -67,7 +68,7 @@ function Signup() {
     console.log('Password:', password);
     console.log('Confirm Password:', confirmPassword);
   };
-
+ 
   return (
     <div>
       {isDesktop ? (
