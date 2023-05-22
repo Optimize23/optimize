@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { styled } from "@mui/material/styles";
 import { Typography } from "@mui/material";
-import BackgroundImg from "../assets/BackgroundEllipse.svg";
+import Background2 from "../assets/Background2.svg";
 import MobileBackground from "../assets/MobileImage.png";
 import { Button, TextField } from "@mui/material";
 
@@ -78,7 +78,7 @@ function Signup() {
           <div className="MobileHeader">
             <HeaderTypography variant="h3">Opitrack</HeaderTypography>
             <img
-              src={BackgroundImg}
+              src={Background2}
               className="BackgroundCircle"
               alt="ellipse circle"
             />
