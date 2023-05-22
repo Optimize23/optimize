@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c69acee5.css",
+    "main.js": "/static/js/main.3464bf94.js",
+    "static/js/787.80d7cd31.chunk.js": "/static/js/787.80d7cd31.chunk.js",
+    "static/media/GirlBng.png": "/static/media/GirlBng.bb08d53555a31d084395.png",
+    "static/media/MobileImage.png": "/static/media/MobileImage.d5250d0f0161a33a5cac.png",
+    "static/media/CardRevenue.svg": "/static/media/CardRevenue.e4768dbc74b317015cc9abe66a4ce5b8.svg",
+    "static/media/Expenses.svg": "/static/media/Expenses.0e4ccfa6eef20b45f7dcc5a1884d0cc8.svg",
+    "static/media/Budgeting.svg": "/static/media/Budgeting.435f1ca74bd09c79f093f83f4c32d3b6.svg",
+    "static/media/Active.svg": "/static/media/Active.8538b61639c903757665f67f579db8d9.svg",
+    "static/media/DesktopColorLogo.svg": "/static/media/DesktopColorLogo.daed39ee0d1b5b639646f1544a285bcd.svg",
+    "index.html": "/index.html",
+    "static/media/Arrow.svg": "/static/media/Arrow.8d89e8b87bfacc01c8d963d4b2fe43d7.svg",
+    "static/media/FooterEllipse.svg": "/static/media/FooterEllipse.46cdb4335f4088eafa2f7d2565c260de.svg",
+    "static/media/BackgroundEllipse.svg": "/static/media/BackgroundEllipse.bacf99acad53eac72b8083258e31f219.svg",
+    "static/media/BlueMobileCircle.svg": "/static/media/BlueMobileCircle.dc6bec906292a48f4d3cfa977839761a.svg",
+    "main.c69acee5.css.map": "/static/css/main.c69acee5.css.map",
+    "main.3464bf94.js.map": "/static/js/main.3464bf94.js.map",
+    "787.80d7cd31.chunk.js.map": "/static/js/787.80d7cd31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c69acee5.css",
+    "static/js/main.3464bf94.js"
+  ]
+}
