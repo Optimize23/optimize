@@ -7,6 +7,8 @@ import MobileLogo from "./MobileLogo";
 import { styled } from "@mui/material/styles";
 import Ellipse70 from "../assets/FooterEllipse.svg";
 import DesktopLogo from "../assets/DesktopColorLogo.svg"
+import {useNavigate} from 'react-router-dom';
+
 
 const OutlineButton = styled(Button)`
   background: #0dde6500;
@@ -92,6 +94,11 @@ const LogForm = () => {
 
   const [rememberMe, setRememberMe] = useState(false);
 
+  const navigate = useNavigate();
+  const expenseClick = () => {
+    navigate('/Expense');
+  };
+
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -176,7 +183,7 @@ Always keep me logged in          </label>
                   variant="contained"
                   type="submit"
                   sx={{ textTransform: "capitalize", fontWeight: "bold", }}
-                >
+                  onClick={expenseClick}   >
                   Log in
                 </ContainedButton>
               </div>
@@ -253,7 +260,7 @@ Always keep me logged in          </label>
                   variant="contained"
                   type="submit"
                   sx={{ textTransform: "capitalize", fontWeight: "bold", }}
-                >
+                  onClick={expenseClick}     >
                   Log in
                 </OutlineButton>
               </div>

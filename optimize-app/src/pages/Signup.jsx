@@ -7,14 +7,14 @@ import { Typography } from "@mui/material";
 import { Button, TextField } from "@mui/material";
 
 
-const ContainedButton = styled(Button)`
-  background: #002a80;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 1em;
-  color: white;
-  width: 150px;
-`;
+// const ContainedButton = styled(Button)`
+//   background: #002a80;
+//   border-radius: 4px;
+//   font-weight: 500;
+//   font-size: 1em;
+//   color: white;
+//   width: 150px;
+// `;
 
 const OutlineButton = styled(Button)`
   background: #0dde6500;
