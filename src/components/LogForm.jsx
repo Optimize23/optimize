@@ -122,7 +122,7 @@ const LogForm = () => {
         <div className="DesktopLoginScreen">
           <div className="LoginContainer">
             <div className="DesktopLogo">
-<img src={DesktopLogo} alt="desktop color logo" style={{width:"20%", margin:"2em 8em", }}/>
+              <img src={DesktopLogo} alt="desktop color logo" style={{width:"20%", margin:"2em 8em", }}/>
             </div>
             <div className="DesktopLoginForm">
               <h3>Welcome Back</h3>
@@ -156,12 +156,12 @@ const LogForm = () => {
                 onChange={handlePasswordChange}
                
               />
-              <div style={{textAlign:"right"}}>
+              {/* <div style={{textAlign:"right"}}>
                 <p style={{color:"#ffffff", fontFamily:"Inter", fontSize:".7em",
               margin:"1em 0" }}>Forget password</p>
-              </div>
+              </div> */}
 
-              <div >
+              <div>
           <label style={{color:"#ffffff",fontSize:"0.8em",fontFamily:"Inter",}}>
             <input style={{  textAlign:"right",
             margin:"1em 1em",color:"#ffffff"}}
@@ -246,8 +246,8 @@ Always keep me logged in          </label>
               checked={rememberMe}
               onChange={handleCheckboxChange}
             />
-Always keep me logged in          </label>
-        </div>
+           Always keep me logged in          </label>
+          </div>
               <div className="LoginBtn" style={{margin:"3em 4.8em"}}>
                 <OutlineButton
                   variant="contained"
